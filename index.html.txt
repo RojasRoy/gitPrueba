@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  
+  <title>Creamos titulo de pagina</title>
 </head>
 
 <body>
