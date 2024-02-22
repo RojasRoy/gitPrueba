@@ -1,0 +1,30 @@
+/*Desarrollar un algoritmo que permita ingresar un número entero entre 1 y 10 (inclusive). La
+computadora debe mostrar la tabla de multiplicar del número ingresado.
+ */
+package practica;
+
+import java.util.Scanner;
+
+public class Practica {
+
+    static public int MIN = 1;
+    static public int MAX = 10;
+
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        int numero;
+
+        System.out.print("ingresá un número entre " + MIN + " y " + MAX + " : ");
+        numero = Integer.parseInt(teclado.nextLine());
+
+        if (numero >= MIN && numero <= MAX) {
+
+            for (int i = MIN; i <= MAX; i++) {
+                System.out.println(numero + " x " + i + " = " + (numero * i));
+            }
+        } else {
+            System.out.println("el número debe estar entre " + MIN + " y " + MAX);
+        }
+
+    }
+}
