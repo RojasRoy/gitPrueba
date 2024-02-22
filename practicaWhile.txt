@@ -1,0 +1,35 @@
+/*Desarrollar un algoritmo que permita ingresar un número entero positivo. La computadora debe
+mostrar la sucesión de números pares desde el número ingresado hasta el cero (inclusive), en una
+sola línea:
+Ejemplo: Si ingresa 15, debe mostrar: 14 12 10 8 6 4 2 0*/
+package practica;
+
+import java.util.Scanner;
+
+public class Practica {
+
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        int numero;
+
+        System.out.print("ingrese un número positivo: ");
+        numero = Integer.parseInt(teclado.nextLine());
+
+        if (numero > 0) {
+
+            if (numero % 2 != 0) {
+                numero --;
+            }
+
+            int cont = numero;
+            while (cont >= 0) {
+                System.out.print(cont + " ");
+                cont -= 2;
+            }
+            System.out.println("");
+        } else {
+            System.out.println("el número ingresado no es correcto");
+        }
+
+    }
+}
